@@ -1,7 +1,6 @@
 #include<stdio.h>
-#include<conio.h>
 int main(){
-  int a,b,sum,n;
+  int a=0,b=1,sum,n;
 printf("Enter Your Number to check Fibonacci Series: ");
   scanf("%d",&n);
   if(n>=0){
@@ -12,6 +11,7 @@ printf("Enter Your Number to check Fibonacci Series: ");
   }
   sum=a+b;
   while(sum<=n){
+	printf(",%d",sum);
     a=b;
     b=sum;
     sum=a+b;
